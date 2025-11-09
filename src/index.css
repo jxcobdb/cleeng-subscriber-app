@@ -1,4 +1,33 @@
 :root {
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --bg: #0b0c10;
+  --card: #121318;
+  --text: #e6e6e6;
+  --muted: #a9a9a9;
+  --active: #27ae60;
+  --cancelled: #c0392b;
+  --border: #242632;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: var(--bg);
+}
+
+main {
+  max-width: 1600px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 28px;
+  letter-spacing: 0.3px;
 }

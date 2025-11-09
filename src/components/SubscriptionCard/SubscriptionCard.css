@@ -1,0 +1,82 @@
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.card__title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    border: 1px solid var(--border);
+}
+
+.badge--active {
+    background: rgba(39, 174, 96, 0.12);
+    color: var(--active);
+}
+
+.badge--cancelled {
+    background: rgba(192, 57, 43, 0.12);
+    color: var(--cancelled);
+}
+
+.card__row {
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+.card__row:first-of-type {
+    border-top: 1px solid var(--border);
+}
+
+.label {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.value {
+    font-weight: 600;
+}
+
+.cancel-btn {
+    width: 100%;
+    margin-top: 14px;
+    padding: 8px 0;
+    background: var(--cancelled);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.cancel-btn:hover:not(:disabled) {
+    opacity: 0.9;
+}
+
+.cancel-btn:disabled {
+    background: #444;
+    color: var(--muted);
+    cursor: not-allowed;
+}

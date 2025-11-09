@@ -1,0 +1,19 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.state {
+    color: var(--muted);
+    text-align: start;
+    margin-top: 20px;
+}
+
+.state-loading {
+    font-style: italic;
+}
+
+.state-error {
+    color: #ff6b6b;
+}
